@@ -1,11 +1,16 @@
-rm rf bin/*
-cp *.adoc bin/
-cp *.asciidoc bin/
-cp -r code bin/
-cp -r contrib bin/
-cp -r draft_images bin/
-cp -r images bin/
-cp -r sinppets bin/
-cd bin
+rm -rf bitcoinbook
+mkdir bitcoinbook
+cp *.adoc bitcoinbook/
+cp *.asciidoc bitcoinbook/
+cp -r code bitcoinbook/
+cp -r contrib bitcoinbook/
+cp -r draft_images bitcoinbook/
+cp -r images bitcoinbook/
+cp -r meta bitcoinbook/
+cp -r snippets bitcoinbook/
+cd bitcoinbook
 /usr/local/bin/asciidoctor *.adoc
 /usr/local/bin/asciidoctor *.asciidoc
+wait
+rm -f *.adoc
+rm -f *.asciidoc

@@ -3,10 +3,11 @@ echo 'building...'
 ./build
 wait
 echo 'tar bitcoinbook...'
-tar -cf bitcoinbook.tar bin
+tar -cf bitcoinbook.tar bitcoinbook
 wait
 echo 'rm bitcoinbook from server...'
-ssh root@blog "rm -rf /data/wwwroot/bitcoinbook"
+ssh blog "rm -rf /data/wwwroot/bitcoinbook"
+wait
 echo 'upload bitcoinbook.tar...'
 scp -r bitcoinbook.tar blog:~/bitcoinbook.tar
 echo 'uncompress blog.tar...'
