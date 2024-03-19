@@ -1,0 +1,11 @@
+rm rf bin/*
+cp *.adoc bin/
+cp *.asciidoc bin/
+cp -r code bin/
+cp -r contrib bin/
+cp -r draft_images bin/
+cp -r images bin/
+cp -r sinppets bin/
+cd bin
+/usr/local/bin/asciidoctor *.adoc
+/usr/local/bin/asciidoctor *.asciidoc

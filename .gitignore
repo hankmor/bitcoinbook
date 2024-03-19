@@ -6,3 +6,6 @@ code/python-env
 _build/
 dist/
 book.html
+.idea
+.Ds_store
+bin

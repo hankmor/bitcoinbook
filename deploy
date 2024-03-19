@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+echo 'building...'
+./build
+wait
+echo 'tar bitcoinbook...'
+tar -cf bitcoinbook.tar bin
+wait
+echo 'rm bitcoinbook from server...'
+ssh root@blog "rm -rf /data/wwwroot/bitcoinbook"
+echo 'upload bitcoinbook.tar...'
+scp -r bitcoinbook.tar blog:~/bitcoinbook.tar
+echo 'uncompress blog.tar...'
+ssh blog "tar -xf ~/bitcoinbook.tar && mv ~/bitcoinbook /data/wwwroot/bitcoinbook && nginx -s reload && rm -f ~/bitcoinbook.tar"
+rm -f bitcoinbook.tar
+echo 'done.'

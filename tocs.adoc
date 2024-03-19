@@ -1,0 +1,22 @@
+= Mastering Bitcoin: Programming the Open Blockchain (3rd Edition)
+
+_By Andreas M. Antonopoulos and David A. Harding_
+
+== xref:preface.adoc[Preface]
+== xref:ch01_intro.adoc[Chapter 1 - Introduction]
+== xref:ch02_overview.adoc[Chapter 2 - Overview]
+== xref:ch03_bitcoin-core.adoc[Chapter 3 - Bitcoin Core]
+== xref:ch04_keys.adoc[Chapter 4 - Keys and Addresses]
+== xref:ch05_wallets.adoc[Chapter 5 - Wallets]
+== xref:ch06_transactions.adoc[Chapter 6 - Transactions]
+== xref:ch07_authorization-authentication.adoc[Chapter 7 - Authorization and Authentication]
+== xref:ch08_signatures.adoc[Chapter 8 - Signatures]
+== xref:ch09_fees.adoc[Chapter 9 - Transaction Fees]
+== xref:ch10_network.adoc[Chapter 10 - Bitcoin Network]
+== xref:ch11_blockchain.adoc[Chapter 11 - Bitcoin Blockchain]
+== xref:ch12_mining.adoc[Chapter 12 - Mining]
+== xref:ch13_security.adoc[Chapter 13 - Security]
+== xref:ch14_applications.adoc[Chapter 14 - Applications]
+== xref:appa_whitepaper.adoc[Appendix A - The Bitcoin Whitepaper]
+== xref:appb_errata.adoc[Appendix B - Errata]
+== xref:appc_bips.adoc[Appendix C - BIPS]
